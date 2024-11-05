@@ -3,7 +3,7 @@ import math
 def sin(x):
     if not isinstance(x, (int, float)):
         raise TypeError("Input must be a number")
-    return math.sin(math.radians(x))
+    return math.sin(math.radians(x)) #dhbafb
 
 def cos(x):
     if not isinstance(x, (int, float)):
