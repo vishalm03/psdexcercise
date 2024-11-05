@@ -1,5 +1,6 @@
+from math import tan
 import unittest
-from scientific_calculator import sin
+from scientific_calculator import sin,cos,tan,sqrt,log,exp
 
 
 #sin
