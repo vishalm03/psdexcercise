@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Updated to v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3  # Updated to v3
         with:
-          python-version: '3.8'  # Specify a specific version if '3.x' causes issues
+          python-version: '3.8'
 
       - name: Install dependencies
         run: |
@@ -29,4 +29,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest test_scientific_calculator.py --maxfail=1 --disable-warnings -q  # More options for debugging
+          pytest test_scientific_calculator.py --maxfail=1 --disable-warnings -q
